@@ -1,0 +1,372 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/locomotive-scroll.min.css" />
+    <title>Tailwind Portfolio</title>
+  </head>
+  <body class="font-nunito">
+    
+    
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+        <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./img/logo.png" alt="" />
+            <span class="text-2xl font-bold text-indigo-900 dark:text-white"
+              >Harry.</span
+            >
+          </div>
+          <ul
+            class="hidden md:flex space-x-5 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
+          >
+            <li class="one active hover:text-gray-500">
+              <a href="#home">home</a>
+            </li>
+            <li class="two hover:text-gray-500">
+              <a class="aboute" href="#about">about me</a>
+            </li>
+            <li class="three hover:text-gray-500">
+              <a href="#academics" data-scroll-to>Academics</a>
+            </li>
+            <li class="four hover:text-gray-500">
+              <a href="#works">works</a>
+            </li>
+            <li class="five hover:text-gray-500">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+          <img
+            id="moon"
+            src="./img/moon.png"
+            class="hidden md:block w-5 cursor-pointer"
+            alt=""
+          />
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden uppercase bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+          >
+            <li>
+              <a id="hLink" href="#home">home</a>
+            </li>
+            <li>
+              <a id="hLink" href="#about">about me</a>
+            </li>
+            <li>
+              <a id="hLink" href="#academics">academics</a>
+            </li>
+            <li>
+              <a id="hLink" href="#works">works</a>
+            </li>
+            <li>
+              <a id="hLink" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div data-scroll-container>
+      <!-- intro content -->
+       <!-- into section -->
+    <div id="home" data-scroll-section
+    class=" h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden"
+  >
+      <!-- image -->
+      <img data-scroll data-scroll-speed="2" data-scroll-direction="vertical"
+        class="absolute bottom-0 right-0 lg:left-0 mx-auto h-full object-cover"
+        src="./img/man.png"
+        alt=""
+      />
+      <!-- circle -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"
+      ></div>
+      <!-- animated text -->
+      <div data-scroll data-scroll-speed="-3" 
+        class=" absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
+      >
+        <span class="text-gray-600">I am</span>
+        <p id="text" class="text-red-500"></p>
+      </div>
+      <!-- texts -->
+      <div data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal"
+        class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3"
+      >
+        <h1 class="box box1 text-4xl font-bold text-indigo-900">Hi, I'm Hari Pathak</h1>
+        <p class="lou box box2 text-gray-400">
+          with about 6 months of learning experience on reactJS and tailwind css. 
+          In addition, learning experience in backend development(FastAPI). 
+          I am a highly motivated and self-learnt individual.
+        </p>
+        
+        <a
+          class="box box3 hire bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"
+          href="#contact"
+          >Hire Me</a
+        >
+      </div>
+
+      <div class="absolute right-10 bottom-2 z-1">
+      <div data-scroll data-scroll-speed="-1" data-scroll-direction="vertical" data-scroll-offset="0%, 0%" class="flex gap-6">
+        <a href="https://www.facebook.com/harry.pathak.395/" ><span class="iconss fa1"><img class="w-6 md:w-10 cursor-pointer" src="./img/facebook.5.svg" alt="" /></span></a>
+        
+        <a href="https://github.com/Harrypathak99" ><span class="iconss fa3"><img class="w-6 md:w-10 cursor-pointer" src="./img/github-logo.png" alt="" /></span></a>
+        <a href="https://www.linkedin.com/in/hari-pathak-391375230/" ><span class="iconss fa4"><img class="w-6 md:w-10 cursor-pointer" src="./img/linkedin.5.svg" alt="" /></span></a>
+      </div>
+      </div>
+
+    </div>
+    <!-- about -->
+    <div data-scroll-section id="about" class="px-10 dark:bg-slate-900">
+      <div
+        class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20"
+      >
+        <!-- left -->
+        <div class="relative">
+          <img
+            class=" h-1/4 absolute top-0 left-0 -z-10"
+            src="./img/dots.png"
+            alt=""
+          />
+          <div data-scroll data-scroll-speed="2" class="rounded-full overflow-hidden">
+            <img class="h-96 w-full object-cover z-20 top-2 left-2" src="./img/portrait3.jpg" alt="" />
+          </div>
+        </div>
+        <!-- right -->
+        <div class="my-auto flex flex-col gap-3 w-3/4">
+          <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
+          <h1 class="text-3xl font-medium dark:text-white">Frontend development</h1>
+          <h1 class="text-3xl font-medium dark:text-white">
+            Starter
+          </h1>
+          <p class="text-gray-600">
+            I am learing to build frontend web applications using React and TailwildCSS. 
+            I have also some learning experience on backend development.
+          </p>
+          <h2 class="text-gray-600 font-medium">HTML</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-600 font-medium">TailwindCSS</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-600 font-medium">Javascript</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-600 font-medium">React</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- academics -->
+    <div data-scroll-section id="academics" class="py-40 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          
+          <h1 class="text-indigo-600 font-bold uppercase">Academics</h1>
+         <br><br>
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap justify-center gap-2">
+          <!-- card -->
+          <div data-scroll data-scroll-speed="2"
+            class="m-5 h-fit flex flex-col w-full p-0 md:w-5/12 shadow-xl rounded-lg"
+          >
+          <img class="h-52 w-full object-cover" src="./img/wrc.jpg" />
+          <div class="p-5">
+            <h1 class="text-xl font-bold text-zinc-700">Bachelors of Geomatics Engineering</h1>
+            <p class="text-indigo-600 font-semibold text-sm">2018 - 2023</p>
+            <p class="text-slate-600 font-semibold text-sm">Pashchimanchal Campus (IOE)</p>
+            <p class="text-slate-600 font-semibold text-sm">Lamachaur, Pokhara</p>
+            
+            </div>
+          </div>
+          <!-- card -->
+          <div data-scroll data-scroll-speed="2"
+            class="m-5 h-fit flex flex-col w-full p-0 md:w-5/12 shadow-xl rounded-lg"
+          >
+          <img class="h-52 w-full object-cover" src="./img/aroma.jpg" />
+          <div class="p-5">
+            <h1 class="text-xl font-bold text-zinc-700">+2 Higher Education</h1>
+            <p class="text-indigo-600 font-semibold text-sm">2016 - 2018</p>
+            <p class="text-slate-600 font-semibold text-sm">Aroma College of Science and Management</p>
+            <p class="text-slate-600 font-semibold text-sm">Bharatpur, Chitwan</p>
+            
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div data-scroll-section id="works" class="py-20 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold uppercase">Portfolio</h1>
+          <h1 class="text-3xl dark:text-white">Works and Projects</h1>
+          <p class="w-1/2 text-center text-gray-400">
+            My approach to learn web development is to create a website that
+            strengthens a company’s brand while ensuring ease of use and
+            simplicity for the audience.
+          </p>
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-2 flex flex-wrap justify-center gap-8">
+          <!-- card -->
+          
+          <div data-scroll data-scroll-speed="1"
+            class="w-full md:w-5/12 shadow-zinc-300 dark:shadow-black shadow-lg rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 "
+          >
+          <div class=" gap-3 items-center">
+            <img class="h-fit w-full object-cover" src="./img/restaurant.png" alt="" />
+            
+            
+            <div class="flex flex-col gap-3">
+            <h1 class="font-medium text-lg dark:text-white">Restaurant WebApp</h1>
+            <p class="text-gray-400">
+              A demo react app about food menu. It is made with React and FastAPI
+            </p>
+            <p class="text-gray-400 text-sm">NOTE: Username and password: admin. It may take a while to login because there is a delay in free version</p>
+            <div class="flex w-full gap-3">
+            <div class="bg-gray-200 w-fit m-2 p-2 rounded-lg hire text-white">
+            <a class="" href="https://moonlit-pixie-fc267f.netlify.app/">View App</a>
+            </div>
+            <div class="bg-gray-200 w-fit m-2 p-2 rounded-lg hire text-white">
+              <a class="" href="https://github.com/Harrypathak99/React-website.git">View in Github</a>
+              </div>
+            </div>
+
+            </div>
+          </div>
+          </div>
+
+         
+          
+          <!-- card -->
+          <div data-scroll data-scroll-speed="-1"
+            class="w-full md:w-5/12 shadow-zinc-300 dark:shadow-black shadow-lg rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 "
+          >
+          <div class=" gap-3 items-center">
+            <img class="w-full h-fit object-cover" src="./img/blog2.jpg" alt="" />
+            
+            
+            <div class="flex flex-col gap-3">
+            <h1 class="font-medium text-lg dark:text-white">Blog WebApp</h1>
+            <p class="text-gray-400">
+              A demo blog app. It is made with React and FastAPI
+            </p>
+            <p class="text-gray-400 text-sm">NOTE:  This project is under development. Feel free to check github link below.</p>
+            <div class="bg-gray-200 w-fit m-2 p-2 rounded-lg hire text-white">
+            <a class="" href="https://github.com/Harrypathak99/component.git">View in Github</a>
+            </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- contact -->
+    <div data-scroll-section id="contact" class="py-20 dark:bg-slate-900">
+      <div class="container mx-auto text-center">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+
+          <h1 class="text-3xl dark:text-white">Have a Question?</h1>
+          <p class="w-1/2 text-center text-gray-400">
+            Do you have an idea? Let's discuss it and see what we can do
+            together.
+          </p>
+        </div><br>
+        <!-- bottom -->
+        <div data-scroll data-scroll-speed="2" class="flex justify-center items-center">
+          <div class="bg-slate-500 rounded-l-lg">
+        <img class="p-2" src="./icons/message.5.svg">
+        </div>
+        <a class="bg-indigo-900 rounded-r-lg p-2 hire text-white" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=harrypathak99@gmail.com" target="_blank">
+           Message via Email
+        </a>
+      </div>
+      </div>
+
+    </div>
+    <!-- footer -->
+    <div data-scroll-section class="w-full bg-gray-800">
+      <div class="container mx-auto py-5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img class="w-8" src="./img/logo.png" alt="" />
+          <span class="text-2xl font-bold text-white">Harry.</span>
+        </div>
+        <span class="hidden md:block font-medium text-white"
+          >© 2024 Harry. Design with ♥️ by Harry Pathak.</span
+        >
+        <div class="flex gap-2">
+          <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+
+    <script src="./locomotive-scroll.min.js"></script>
+    
+
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+            multiplier: 1,
+        });
+
+        new ResizeObserver(() => scroll.update()).observe(
+          document.querySelector("[data-scroll-container]")
+        );
+       
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+
+      if (target) {
+        scroll.scrollTo(target, {
+          offset: 0 // Adjust offset if needed
+        });
+      }
+    });
+  });
+    </script>
+
+ 
+  </body>
+</html>

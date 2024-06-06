@@ -1,0 +1,84 @@
+.hire {
+ position: relative;
+ transition: all 0.3s ease;
+ z-index: 2;
+ background-color: rgb(49, 46, 139);
+ overflow: hidden;
+}
+
+.hire:hover {
+    color: black;
+}
+.hire::before, .one::before , .two::before , .three::before , .four::before , .five::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    background-color: rgb(59, 199, 255);
+    border-radius:  50% 50% 0 0;
+    transform-origin: top left;
+    transition: all 0.5s ease;
+    
+}
+.hire:hover::before, .one:hover::before, .two:hover::before, .three:hover::before, .four:hover::before, .five:hover::before {
+    height: 180%;
+    transform-origin: top right;
+}
+
+.one, .two, .three, .four, .five {
+    padding: 5px;
+    position: relative;
+    background-color: inherit;
+    overflow: hidden;
+}
+.one::before , .two::before , .three::before , .four::before , .five::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    z-index: -1;
+    background-color: aqua;
+    border-radius:  0;
+    transform-origin: top left;
+    transition: all 0.5s ease;
+    
+}
+.one:hover::before, .two:hover::before, .three:hover::before, .four:hover::before, .five:hover::before {
+    width: 180%;
+    height: 180%;
+    border-radius: 0 50% 0 50%;
+    transform-origin: top right;
+}
+
+.iconss {
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+.iconss:hover {
+    transform: scale(1.2);
+}
+.iconss::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background-color: aqua;
+    border-radius:  0;
+    transform-origin: top left;
+    transition: all 0.5s ease;
+
+}
+.iconss:hover::before {
+    width: 100%;
+    transform-origin: top right;
+
+}
